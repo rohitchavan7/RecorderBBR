@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/btn_back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_bwrd"
+        app:layout_constraintBottom_toBottomOf="@+id/play_pause"
+        app:layout_constraintEnd_toStartOf="@+id/play_pause"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/play_pause" />
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/play_pause"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="false"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/play_pause" />
+
+    <ImageView
+        android:id="@+id/btn_next"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_fwrd"
+        app:layout_constraintBottom_toBottomOf="@+id/play_pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/play_pause"
+        app:layout_constraintTop_toTopOf="@+id/play_pause" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
