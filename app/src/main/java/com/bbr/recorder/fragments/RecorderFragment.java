@@ -167,6 +167,7 @@ public class RecorderFragment extends Fragment {
 
     private void startRecording() {
         fileName = null;
+        mEnterName.setEnabled(false);
 
         //default dir creating
         File file = new File(Environment.getExternalStorageDirectory(), "RecorderBBR");
@@ -233,10 +234,12 @@ public class RecorderFragment extends Fragment {
         }
         mRecorder = null;
         mWave.pauseAnimation();
+        mEnterName.setEnabled(true);
         Toast.makeText(requireContext(), "Recording saved successfully.", Toast.LENGTH_SHORT).show();
         prepareForRecording();
         resetTimer();
         mEnterName.setText("");
+
 
 
     }

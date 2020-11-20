@@ -18,8 +18,8 @@
 
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/play_pause"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
+        android:layout_width="69dp"
+        android:layout_height="69dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
